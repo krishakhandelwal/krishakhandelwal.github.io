@@ -1,5 +1,5 @@
 /**
-* Template Name: iPortfolio - v1.4.0
+* Template Name: iPortfolio - v2.0.3
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -14,16 +14,23 @@ body {
 }
 
 a {
-  color: #B03B76;
+  color: #149ddd;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #B03B76;
+  color: #37b3ed;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: auto;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -37,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   right: 15px;
   bottom: 15px;
-  background: #B03B76;
+  background: #149ddd;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -52,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-to-top:hover {
   color: #fff;
-  background: #B03B76;
+  background: #2eafec;
   transition: background 0.2s ease-in-out;
 }
 
@@ -69,8 +76,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  /* background: #040b14; */
-  background: #050d18;
+  background: #040b14;
   overflow-y: auto;
 }
 
@@ -112,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #B03B76;
+  background: #149ddd;
   color: #fff;
   text-decoration: none;
 }
@@ -171,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover i, .nav-menu .active > a i, .nav-menu li:hover > a i {
-  color: #B03B76;
+  color: #149ddd;
 }
 
 /* Mobile Navigation */
@@ -191,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-toggle i {
-  color: #B03B76;
+  color: #149ddd;
 }
 
 .mobile-nav-active {
@@ -252,7 +258,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #B03B76;
+  border-bottom: 3px solid #149ddd;
 }
 
 @media (min-width: 1024px) {
@@ -282,7 +288,7 @@ section {
 }
 
 .section-bg {
-  background: #f9f9f9;
+  background: #f5f8fd;
 }
 
 .section-title {
@@ -304,7 +310,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #B03B76;
+  background: #149ddd;
   bottom: 0;
   left: 0;
 }
@@ -334,7 +340,7 @@ section {
 .about .content ul i {
   font-size: 20px;
   padding-right: 2px;
-  color: #B03B76;
+  color: #149ddd;
 }
 
 .about .content p:last-child {
@@ -356,7 +362,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #B03B76;
+  color: #149ddd;
   float: left;
 }
 
@@ -374,34 +380,35 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #7A2852;
+  color: #122f57;
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #7A2852;
+  color: #122f57;
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #7A2852;
+  color: #1f5297;
 }
 
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
 .skills .progress {
-  height: 50px;
+  height: 60px;
   display: block;
   background: none;
+  border-radius: 0;
 }
 
 .skills .progress .skill {
-  padding: 10px 0;
+  padding: 0;
   margin: 0 0 6px 0;
   text-transform: uppercase;
   display: block;
@@ -416,14 +423,15 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #ececec;
+  background: #dce8f8;
+  height: 10px;
 }
 
 .skills .progress-bar {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #B03B76;
+  background-color: #149ddd;
 }
 
 /*--------------------------------------------------------------
@@ -440,7 +448,7 @@ section {
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #7A2852;
+  border-left: 2px solid #1f5297;
   position: relative;
 }
 
@@ -456,7 +464,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #E8D7DF;
+  background: #e4edf9;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -484,7 +492,7 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #7A2852;
+  border: 2px solid #1f5297;
 }
 
 /*--------------------------------------------------------------
@@ -518,7 +526,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: #B03B76;
+  color: #149ddd;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -601,10 +609,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #B03B76;
+  background: #149ddd;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #B03B76;
+  border: 1px solid #149ddd;
 }
 
 .services .icon i {
@@ -617,7 +625,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #B03B76;
+  color: #149ddd;
 }
 
 .services .title {
@@ -632,7 +640,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #B03B76;
+  color: #149ddd;
 }
 
 .services .description {
@@ -670,7 +678,7 @@ section {
 }
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #E8D7DF;
+  color: #c3e8fa;
   font-size: 26px;
 }
 
@@ -725,7 +733,7 @@ section {
 }
 
 .testimonials .owl-dot.active {
-  background-color: #B03B76 !important;
+  background-color: #149ddd !important;
 }
 
 @media (max-width: 767px) {
@@ -750,7 +758,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #B03B76;
+  color: #149ddd;
   float: left;
   width: 44px;
   height: 44px;
@@ -801,12 +809,12 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #B03B76;
+  background: #149ddd;
   color: #fff;
 }
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-  background: #B03B76;
+  background: #149ddd;
   color: #fff;
 }
 
@@ -871,6 +879,14 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
+.contact .php-email-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .php-email-form label {
+  padding-bottom: 8px;
+}
+
 .contact .php-email-form input, .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
@@ -882,11 +898,11 @@ section {
 }
 
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+  padding: 10px 15px;
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #B03B76;
+  background: #149ddd;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -992,7 +1008,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #B03B76 !important;
+  background-color: #149ddd !important;
 }
 
 .portfolio-details .portfolio-info {
